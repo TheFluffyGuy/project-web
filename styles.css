@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  background: none;
+}
+
+:root {
+  --product-btn-color: #35495e;
+}
+
+li {
+  all: unset;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  height: 80px;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-container > ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 300px;
+}
+.nav-container > ul > li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.nav-container > ul > li > button {
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.nav-container > ul > li > button:hover {
+  background-color: #ffff;
+
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    10px 5px 15px -5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 10px 5px 15px -5px rgba(0, 0, 0, 0);
+}
+
+.active {
+  background-color: #ffff !important;
+}
+
+.content-container {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product {
+  padding: 15px 8px;
+  margin: 0 0 8px 0;
+  border: 1px solid black;
+  background-color: white;
+  min-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-shadow: 10px 5px 15px -5px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 5px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+.product > span {
+  display: flex;
+  align-items: center;
+}
+
+.product > span > strong {
+  padding: 0 5px;
+}
+
+.product-btn {
+  background-color: var(--product-btn-color);
+  color: #fff;
+  padding: 5px 10px;
+}
+
+button[name="option"] {
+  border: none;
+}
+
+@media only screen and (max-width: 620px) {
+  .product {
+    min-width: 95%;
+  }
+}
